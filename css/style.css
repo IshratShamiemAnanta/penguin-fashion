@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+img {
+  max-width: 100%;
+}
+/* navbar and banner-section */
+
+.logo-img img {
+  width: 250px;
+}
+
+.nav-background,
+.banner-background {
+  background-color: #fffbf0;
+}
+
+.navbar ul li a {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navbar ul li a:hover {
+  background-color: #fabe4c;
+}
+
+.banner-section {
+  height: 600px;
+}
+
+.banner-info h1 {
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Bebas Neue", cursive;
+}
+
+.banner-info span {
+  color: #fabe4c;
+}
+
+.banner-info p {
+  font-size: 18px;
+}
+
+.banner-img img {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.cart-icon img {
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+}
+/* button-design */
+
+.button-buy-now {
+  background-image: linear-gradient(#a4bc46, #85a019);
+  border: 0;
+  border-radius: 10px;
+
+  transition: 0.5s;
+}
+
+.button-buy-now:hover {
+  transform: scale(1.1);
+}
+
+.button-subscribe {
+  background-image: linear-gradient(#a4bc46, #85a019);
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 10px;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.button-subscribe:hover {
+  transform: scale(1.1);
+  color: black;
+}
+/* woman-jacket-section + man-jacket-section + shoes-section*/
+
+.woman-jacket-section h3,
+.man-jacket-section h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.woman-jacket-section h5,
+.man-jacket-section h5 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.card-border {
+  border-radius: 15px;
+}
+
+.card-image-box {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  height: 350px;
+}
+
+.card-image-box img {
+  max-height: 100%;
+  padding: 15px;
+}
+
+.penguin-card-body {
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.ladies-jacket-image img {
+  width: 80%;
+}
+
+.price-tag h4 {
+  color: #fabe4c;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.penguin-card-footer {
+  border: 0;
+  background-color: white;
+  padding: 0.5rem 0;
+}
+
+.shoes-card-image img {
+  margin-top: 50px;
+}
+/* shopping-section  */
+
+.shopping-section {
+  margin-top: 100px;
+}
+
+.shopping-section h4 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.shopping-info {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.shopping-info-image img {
+  width: 100px;
+  margin-right: 25px;
+}
+
+.shopping-image img {
+  margin-left: 20px;
+}
+
+.subscribe-section {
+  background-color: #fffbf0;
+  height: 500px;
+  margin: 100px auto;
+}
+/* footer-section */
+
+footer p {
+  color: #85a019;
+  margin: 0 auto;
+}
+
+/* media query */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-info h1 {
+    font-size: 70px;
+  }
+  .card-image-box {
+    height: 250px;
+  }
+
+  .shopping-details {
+    height: 400px;
+  }
+  .shopping-info-image img {
+    width: 80px;
+    height: 100px;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-info h1 {
+    font-size: 50px;
+  }
+  .penguin-card-body h5 {
+    font-size: 16px;
+  }
+
+  .card-image-box {
+    height: 200px;
+  }
+  .shoes-card-image img {
+    margin-top: 40px;
+  }
+  .penguin-card-footer .button-buy-now {
+    font-size: 13px;
+    padding: 5px 10px;
+
+    width: 120px;
+  }
+
+  .shopping-info {
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .price-tag h4 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .banner-section {
+    height: 800px;
+  }
+  .banner-info h1 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+  .shoes-card-image img {
+    margin-top: 10px;
+  }
+
+  .button-buy-now {
+    font-size: 25px;
+    padding: 15px 30px;
+  }
+  .price-tag h4 {
+    font-size: 50px;
+  }
+  .shopping-details-reverse {
+    flex-direction: column-reverse;
+  }
+  .shopping-details {
+    margin-top: 60px;
+  }
+  .shopping-image img {
+    margin-left: 0px;
+  }
+  .shopping-info-mobile_ui {
+    flex-direction: column;
+  }
+  .shopping-info-content {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .shopping-info-content p {
+    font-size: 15px;
+  }
+  .shopping-info-image img {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-img img {
+    width: 300px;
+    margin-left: 100px;
+  }
+  .banner-section {
+    height: 550px;
+  }
+  .banner-info h1 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  .banner-info p {
+    font-size: 17px;
+  }
+  .button-buy-now {
+    font-size: 30px;
+    padding: 15px 30px;
+  }
+  .price-tag h4 {
+    font-size: 80px;
+  }
+  .shoes-card-image img {
+    margin-top: 0px !important;
+  }
+  .shopping-details-reverse {
+    flex-direction: column-reverse;
+  }
+  .shopping-details {
+    margin-top: 60px;
+  }
+  .shopping-image img {
+    margin-left: 0px;
+  }
+  .shopping-info-mobile_ui {
+    flex-direction: column;
+  }
+  .shopping-info-content {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .shopping-info-content p {
+    font-size: 15px;
+  }
+  .shopping-info-image img {
+    margin-right: 0px;
+  }
+}
