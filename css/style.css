@@ -60,14 +60,25 @@ img {
 }
 /* button-design */
 
+.banner-button-buy-now {
+  font-size: 30px;
+  padding: 15px 30px;
+  background-image: linear-gradient(#a4bc46, #85a019);
+  border: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
 .button-buy-now {
   background-image: linear-gradient(#a4bc46, #85a019);
   border: 0;
   border-radius: 10px;
-
   transition: 0.5s;
 }
 
+.banner-button-buy-now:hover {
+  transform: scale(1.1);
+}
 .button-buy-now:hover {
   transform: scale(1.1);
 }
@@ -207,6 +218,13 @@ footer p {
   .penguin-card-body h5 {
     font-size: 16px;
   }
+  .banner-button-buy-now {
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+  .banner-section {
+    height: 500px;
+  }
 
   .card-image-box {
     height: 200px;
@@ -338,6 +356,10 @@ footer p {
   .banner-section {
     height: 550px;
   }
+  .banner-button-buy-now {
+    font-size: 25px;
+    padding: 10px 25px;
+  }
   .banner-info h1 {
     font-size: 42px;
   }
@@ -345,7 +367,7 @@ footer p {
     font-size: 16px;
   }
   .button-buy-now {
-    font-size: 30px;
+    font-size: 25px;
     padding: 15px 30px;
   }
   .price-tag h4 {
