@@ -30,10 +30,6 @@ img {
   font-weight: 400;
 }
 
-.navbar ul li a:hover {
-  background-color: #fabe4c;
-}
-
 .banner-section {
   height: 600px;
 }
@@ -237,13 +233,19 @@ footer p {
   }
 }
 
-@media (min-width: 568px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .banner-section {
     height: 800px;
   }
   .banner-info h1 {
     font-size: 50px;
     padding-top: 20px;
+  }
+  .banner-info p {
+    font-size: 17px;
+  }
+  .banner-img img {
+    margin-left: 20px;
   }
   .shoes-card-image img {
     margin-top: 10px;
@@ -280,7 +282,7 @@ footer p {
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 429px) and (max-width: 575px) {
   .banner-img img {
     width: 300px;
     margin-left: 100px;
@@ -326,5 +328,55 @@ footer p {
   }
   .shopping-info-image img {
     margin-right: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 428px) {
+  .banner-img img {
+    width: 325px;
+    margin-left: 30px;
+  }
+  .banner-section {
+    height: 550px;
+  }
+  .banner-info h1 {
+    font-size: 42px;
+  }
+  .banner-info p {
+    font-size: 16px;
+  }
+  .button-buy-now {
+    font-size: 30px;
+    padding: 15px 30px;
+  }
+  .price-tag h4 {
+    font-size: 50px;
+  }
+  .shoes-card-image img {
+    margin-top: 25px;
+  }
+  .shopping-details-reverse {
+    flex-direction: column-reverse;
+  }
+  .shopping-details {
+    margin-top: 60px;
+  }
+  .shopping-image img {
+    margin-left: 0px;
+  }
+  .shopping-info-mobile_ui {
+    flex-direction: column;
+  }
+  .shopping-info-content {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .shopping-info-content p {
+    font-size: 15px;
+  }
+  .shopping-info-image img {
+    margin-right: 0px;
+  }
+  footer p {
+    font-size: 12px;
   }
 }
